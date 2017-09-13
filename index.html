@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>What Is My IP | Find Your IP</title>
+    <style>
+        body {
+            width: 100wh;
+            height: 90vh;
+            color: #fff;
+            background: linear-gradient(-45deg, #EE7752, #e73c3c, #23A6D5, #23D5AB);
+            background-size: 300% 300%;
+            -webkit-animation: Gradient 25s ease infinite;
+            -moz-animation: Gradient 25s ease infinite;
+            animation: Gradient 25s ease infinite;
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        * {
+            font-family: 'Roboto','Helvetica Neue','Helvetics','Arial','sans-serif';
+            font-size: larger;
+            color: #fff;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 12vw;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script type="text/javascript">var userip;</script>
+    <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+    <script type="text/javascript">document.querySelector("div").innerHTML = userip;</script>
+</body>
+</html>
